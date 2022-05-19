@@ -1,27 +1,26 @@
-1) Посмотреть где я ----  pwd
-2) Создать папку --- mkdir 29_group_hw1/
-3) Зайти в папку ---- cd 29_group_hw1/    or     cd !$
-4) Создать 3 папки --- mkdir {1..3}   or mkdir -p {qzz,qqw,www}
-5) Зайти в любоую папку  --- cd 1/
-6) Создать 5 файлов (3 txt, 2 json) --- touch {1..3}.txt {1..2}.json    or touch {w1,w2,w3}.txt {q1,q2}.json
-7) Создать 3 папки --- mkdir {1..3}
-8. Вывести список содержимого папки --- ls
-9) + Открыть любой txt файл --- open 1.txt
-10) + написать туда что-нибудь, любой текст.  ---  Aloha 
-11) + сохранить и выйти. ---(command+S) close
-12) Выйти из папки на уровень выше --- cd ../
+Task:
+1) Where i'm ----  pwd
+2) Create folder --- mkdir 29_group_hw1
+3) Enter in folder ---- cd 29_group_hw1  
+4) Create 3 folders --- mkdir 1 2 3  or mkdir {1..3}
+5) Enter to ane folder  --- cd 1
+6) Create 5 files (3- .txt, 2- .json) --- touch 1.txt 2.txt 3.txt 4.json 5.json or touch {w1,w2,w3}.txt {q1,q2}.json
+7) Create 3 folders --- mkdir 1 2 3
+8) Output a list of folder contents --- ls -la
+9) + Open ant .txt faile --- open 1.txt
+10) + Write any text  ---  Aloha 
+11) + Save and Quite --- Esc -> :wq
+12) Up catalog --- cd ../
 —
-13) переместить любые 2 файла, которые вы создали, в любую другую папку. --- mv w1.txt w2.txt qqw/
-14) скопировать любые 2 файла, которые вы создали, в любую другую папку. --- 
-15) Найти файл по имени --- cp q1.json q2.json qzz/
-16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.+
-17) вывести несколько первых строк из текстового файл---- sed '1,3!d' w1.txt
-18) вывести несколько последних строк из текстового файла --- sed '3,5!d' w1.txt
-19) просмотреть содержимое длинного файла (команда less) изучите как она работает.--- +
-20) вывести дату и время. ---- date
+13) Move any 2 files, to any folder --- mv 1.txt 2.txt 2
+14) Copy any 2 files, to any folder  --- cp 4.json 5.json 3
+15) Search for a file by name --- find . -name 3.txt
+16) View the content in real time (grep command) learn how it works --- tail -f in.txt | grep seazrch_term >> out.txt
+17) Print the first 3 lines from file ---- head -3 1.txt 
+18) Print the last 3 lines from file --- tail -3 1.txt
+19) Print date and time ---- date
 =========
-
-Задание *
-1) Отправить http запрос на сервер.
+Task *:
+1) Send http request to server
 http://162.55.220.72:5005/terminal-hw-request --- curl http...
-2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+2) Write script for auto -  3, 4, 5, 6, 7, 8, 13 (create file hw1.sh - open terminal comand: sh hw1.sh)
